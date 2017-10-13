@@ -1,8 +1,13 @@
 {
   "name": "react-db-diff",
   "version": "0.1.0",
+  "description": "Compares database schemas to get differences on structure",
   "private": true,
   "dependencies": {
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "express": "^4.16.2",
+    "morgan": "^1.9.0",
     "mysql": "^2.15.0",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
@@ -10,6 +15,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "dev": "node ./start_server.js",
+    "deploy": "npm run build && export NODE_ENV=production && node ./start_server.js",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
