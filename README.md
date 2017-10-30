@@ -4,9 +4,8 @@ Simple webapp that helps diffing DBs
 
 ## Architecture
 
-The app is composed or a react application bootstraped with `create-react-app` 
+The app is composed or a react application bootstraped with `create-react-app`
 and a simple `express` server that does the connection to the DB
-
 
 ## How to use
 
