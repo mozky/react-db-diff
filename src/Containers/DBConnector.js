@@ -28,7 +28,7 @@ export default class DBConnector extends React.Component {
       body: JSON.stringify(connectionCredentials),
     })
       .then(function(response) {
-        if (response.ok && response.status == 200) return response.json()
+        if (response.ok && response.status === 200) return response.json()
       })
       .then((body) => {
         console.log(body)
